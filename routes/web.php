@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Http\Requests;
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
@@ -15,15 +16,17 @@
 //$verbs = ['GET', 'HEAD', 'POST', 'PUT', 'PATCH', 'DELETE'];
 
 //$verbs = ['GET', 'HEAD', 'POST', 'PUT', 'PATCH', 'DELETE'];
-$router->get('/books', 'BookControler@index');
+$router->get('/books', 'BookController@getAPI');
 
-$router->get('/books/{id}', 'BookControler@show');
+// $router->get('/books', 'BookController@index');
 
-$router->post('/books/create', 'BookControler@store');
+// $router->get('/books/{id}', 'BookController@show');
 
-$router->put('/books/update/{id}', 'BookControler@update');
+// $router->post('/books/create', 'BookController@store');
 
-$router->delete('/books/delete/{id}', 'BookControler@destroy');
+// $router->put('/books/update/{id}', 'BookController@update');
+
+// $router->delete('/books/delete/{id}', 'BookController@destroy');
 
 
 $router->get('/', function () use ($router) {
