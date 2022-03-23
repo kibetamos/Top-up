@@ -9,14 +9,17 @@ use Illuminate\Support\Facades\Http;
 class BookController extends Controller
 {
     public function getAPI(){
-        $collection = HTTP::get("https://anapioficeandfire.com/api/books");
-        return view('user', ['collection'=>$collection['books']]);
+        // $collection = HTTP::get("https://reqres.in/api/users?page=1");
+        $books= HTTP::get("https://anapioficeandfire.com/api/books/1");
+
+        return view("books",['books' => $books['characters']]);
+        //return Http::get('https://anapioficeandfire.com/api/books/1');
         //return "Api";
     }
 
     // public function index()
     // {
-    //     // Get all data from database
+    //     // Get all data from databases
     //     $books = Book::all();
 
     //     return response() ->json($books);
