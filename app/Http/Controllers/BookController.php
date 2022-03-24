@@ -37,12 +37,11 @@ class BookController extends Controller
         //Post data to database from user
         //Validate the data
         $this -> validate($request,[
-            'name' => 'required',
+            'title' => 'required',
             'author' => 'required',
             'comment' => 'required'
         ]);
         $book = new Book();
-
         $book->name = $request->input('name');
         $book->author = $request->input('author');
         $book->comment = $request->input('comment');
