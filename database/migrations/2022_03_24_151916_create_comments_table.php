@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->unsignedInteger('book_id');
-            $table->unsignedInteger('comment');
+            $table->foreign('id')->references('id')->on('books');;
+            $table->string('comment');
             $table->timestamps();
         });
     }

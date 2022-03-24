@@ -39,12 +39,12 @@ class BookController extends Controller
         $this -> validate($request,[
             'title' => 'required',
             'author' => 'required',
-            'comment' => 'required'
+            'description' => 'required'
         ]);
         $book = new Book();
         $book->title = $request->input('title');
         $book->author = $request->input('author');
-        $book->comment = $request->input('comment');
+        $book->description = $request->input('description');
 
         $book->save();
         return response()->json($book);
@@ -74,13 +74,13 @@ class BookController extends Controller
            $this -> validate($request,[
             'title' => 'required',
             'author' => 'required',
-            'comment' => 'required'
+            'description' => 'required'
         ]);
         $book = Book::find($id);
 
         $book->name = $request->input('title');
         $book->author = $request->input('author');
-        $book->comment = $request->input('comment');
+        $book->description = $request->input('description');
 
         $book->save();
         return response()->json($book);
