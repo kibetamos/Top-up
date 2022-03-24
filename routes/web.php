@@ -18,15 +18,15 @@ use Illuminate\Http\Requests;
 //$verbs = ['GET', 'HEAD', 'POST', 'PUT', 'PATCH', 'DELETE'];
 $router->get('/books', 'BookController@getAPI');
 
-// $router->get('/books', 'BookController@index');
+$router->get('/books', 'BookController@index');
 
-// $router->get('/books/{id}', 'BookController@show');
+$router->get('/books/{id}', 'BookController@show');
 
-// $router->post('/books/create', 'BookController@store');
+$router->post('/books/create', 'BookController@store');
 
-// $router->put('/books/update/{id}', 'BookController@update');
+$router->put('/books/update/{id}', 'BookController@update');
 
-// $router->delete('/books/delete/{id}', 'BookController@destroy');
+$router->delete('/books/delete/{id}', 'BookController@destroy');
 
 
 $router->get('/', function () use ($router) {
