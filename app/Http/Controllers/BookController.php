@@ -42,7 +42,7 @@ class BookController extends Controller
             'comment' => 'required'
         ]);
         $book = new Book();
-        $book->name = $request->input('name');
+        $book->title = $request->input('title');
         $book->author = $request->input('author');
         $book->comment = $request->input('comment');
 
@@ -72,13 +72,13 @@ class BookController extends Controller
 
            //Validate the data
            $this -> validate($request,[
-            'name' => 'required',
+            'title' => 'required',
             'author' => 'required',
             'comment' => 'required'
         ]);
         $book = Book::find($id);
 
-        $book->name = $request->input('name');
+        $book->name = $request->input('title');
         $book->author = $request->input('author');
         $book->comment = $request->input('comment');
 
