@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('comments', function (Blueprint $table) {
-            $table->id();
-            $table->foreign('id')->references('id')->on('books');;
+            $table->bigIncrements('id');
+            $table->unsignedInteger('book_id');
             $table->string('comment');
             $table->timestamps();
         });
