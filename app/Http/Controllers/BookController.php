@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Book;
 use Illuminate\Support\Facades\Http;
 // use Illuminate\Support\
+use App\Http\Resources\BookResource;
 class BookController extends Controller
 {
     // public function getAPI(){
@@ -20,6 +21,8 @@ class BookController extends Controller
     public function index()
     {
         // Get all data from databases
+
+         //return BookResource::collection(Book::with('comments')->paginate(25));
         $books = Book::all();
 
         return response() ->json($books);
