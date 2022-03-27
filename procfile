@@ -1,1 +1,2 @@
 web: vendor/bin/heroku-php-apache2 public/
+//$DATABASE_URL = parse_url("postgres://klfemzdptgpkuk:93aa94cd38135c6ea724fdd66bffbbfcbb0e3ff6ae1a1e4368783d298095e134@ec2-44-194-92-192.compute-1.amazonaws.com:5432/d99s8qc0jvfs5a")

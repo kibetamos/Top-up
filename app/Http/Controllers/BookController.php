@@ -23,9 +23,13 @@ class BookController extends Controller
         // Get all data from databases
 
          //return BookResource::collection(Book::with('comments')->paginate(25));
-        $books = Book::all();
+        // $books = Book::all();
 
-        return response() ->json($books);
+        // return response() ->json($books);
+        return BookResource::collection(Book::with('comments'));
+
+
+
 
     }
 
@@ -50,7 +54,8 @@ class BookController extends Controller
         $book->description = $request->input('description');
 
         $book->save();
-        return response()->json($book);
+        // return response()->json($book,201);
+        return new BookResource($book);
 
     }
 
