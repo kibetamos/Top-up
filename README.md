@@ -64,7 +64,9 @@ Screenshot 6
 
 ## Setup
 For our project, we already have the set up on heroku with the database migrated to the cloud.
+
 To set up, you wil use insomnia so as to push the book records to the database. 
+
 To create a book from the insomnia software;
 
 $router->get('/', 'BookController@index');
@@ -92,8 +94,11 @@ We use the DELETE method to delete an entry https://topuprestmama.herokuapp.com/
 
 ## Usage
 We use the POST method to add a book https://topuprestmama.herokuapp.com/books/create
+
 We use the GET method to get the records of books we have https://topuprestmama.herokuapp.com/books
+
 We use the PUT methos to update an entry https://topuprestmama.herokuapp.com/books/update/2
+
 We use the DELETE method to delete an entry https://topuprestmama.herokuapp.com/books/delete/2
 
 `write-your-code-here`
