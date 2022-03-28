@@ -1,12 +1,10 @@
 <h1>  API </h1>
-<table border="1">
-    <tr>
-        <td>ISBN</td>
 
-    </tr>
+    <ul>
     @foreach($books as $book)
-    <tr>
-    <td>{{$book}}</td>
-</tr>
+
+ <li><h3>{{$book['author']}}</h3> <p>{{$book['description']}}</p></li>
+
     @endforeach
-</table>
+    </ul>
+

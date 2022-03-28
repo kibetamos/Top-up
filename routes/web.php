@@ -18,7 +18,7 @@ use Illuminate\Http\Requests;
 //$verbs = ['GET', 'HEAD', 'POST', 'PUT', 'PATCH', 'DELETE'];
 // $router->get('/books', 'BookController@getAPI');
 
-$router->get('/books', 'BookController@index');
+$router->get('/', 'BookController@index');
 
 $router->get('/books/{id}', 'BookController@show');
 
@@ -40,6 +40,6 @@ $router->put('/comments/update/{id}', 'CommentController@update');
 $router->delete('/comments/delete/{id}', 'CommentController@destroy');
 
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+// $router->get('/', function () use ($router) {
+//     return $router->app->version();
+// });

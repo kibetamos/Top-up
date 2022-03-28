@@ -23,7 +23,7 @@ class BookResource extends JsonResource
             'updated_at' => (string) $this->updated_at,
             // 'user' => $this->user,
             'comments' => $this->comments,
-            // 'average_rating' => $this->ratings->avg('comment')
+            'sum_comment' => $this->comments->sum('comment')
         ];;
     }
 }
