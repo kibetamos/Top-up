@@ -48,14 +48,17 @@ List the ready features here:
 
 
 ## Screenshots
-![Example screenshot](images/Screenshot%20(669).png)
-Screenshot 1
 ![Example screenshot](images/Screenshot%20(668).png)
-Screenshot 2
+Screenshot 1
 ![Example screenshot](images/Screenshot%20(669).png)
-Screenshot 3
+Screenshot 2
 ![Example screenshot](images/Screenshot%20(670).png)
+Screenshot 3
+![Example screenshot](images/Screenshot%20(671).png)
 Screenshot 5
+
+![Example screenshot](images/Screenshot%20(672).png)
+Screenshot 6
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
