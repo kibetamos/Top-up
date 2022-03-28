@@ -6,31 +6,107 @@
 [![License](https://img.shields.io/packagist/l/laravel/lumen)](https://packagist.org/packages/laravel/lumen-framework)
 
 Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+# Project Name
+> Outline a brief description of your project.
+> Live demo [_here_](https://topuprestmama.herokuapp.com/). <!-- If you have the project hosted somewhere, include the link here. -->
 
-## Official Documentation
-## Requirements
-*[1.Insomnia to rn the API](#general-info)
-*[2.PHP >= 7.1.3](#general-info)
-*[3.OpenSSL PHP Extension](#general-info)
-*[4.PDO PHP Extension](#general-info)
-*[5.Tokenizer PHP Extension](#general-info)
-[*6.XML PHP Extension](#general-info)
-*[7.Ctype PHP Extension](#general-info)
-*[8.JSON PHP Extension](#general-info)
-[*9.GD PHP Extension](#general-info)
-[*10.Imagick PHP Extension](#general-info)
-[*Note: Improper permission on storage & public folder will lead to server & application errors]
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
+<!-- * [License](#license) -->
+
+
+## General Information
+- This is a BookAPI application.
+<!-- - What problem does it (intend to) solve? -->
+- This API can be used to easily interact with books API.
+- IT is a way to search and access that content, as well as to create and view personalization around that content
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+
+
+## Technologies Used
+- Tech 1 - Lumen
+- Tech 2 - PHP
+- Tech 3 - Heroku- hosting
+- Tech 4 - Mysql
+- 
+
+
+## Features
+List the ready features here:
+- CRUD Functionality of  a book and a comment
+- Get All books and comments
+- API craetion
+
+
+## Screenshots
+![Example screenshot](C:/Users/AK/Pictures/Screenshots/screenshot(668).png)
+<!-- If you have screenshots you'd like to share, include them here. -->
+
+
+## Setup
+For our project, we already have the set up on heroku with the database migrated to the cloud.
+To set up, you wil use insomnia so as to push the book records to the database. 
+To create a book from the insomnia software;
+We use the POST method to add a book https://topuprestmama.herokuapp.com/books/create
+We use the GET method to get the records of books we have https://topuprestmama.herokuapp.com/books
+We use the PUT methos to update an entry https://topuprestmama.herokuapp.com/books/update/2
+We use the DELETE method to delete an entry https://topuprestmama.herokuapp.com/books/delete/2
 
 
 
-## Contributing
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Usage
+We use the POST method to add a book https://topuprestmama.herokuapp.com/books/create
+We use the GET method to get the records of books we have https://topuprestmama.herokuapp.com/books
+We use the PUT methos to update an entry https://topuprestmama.herokuapp.com/books/update/2
+We use the DELETE method to delete an entry https://topuprestmama.herokuapp.com/books/delete/2
 
-## Security Vulnerabilities
+`write-your-code-here`
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
-## License
+## Project Status
+<!-- Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why. -->
+The project is under improvement. The API has to be improved to include Authentication.
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Room for Improvement
+The project is under improvement. The API has to be improved to include Authentication.
+Authentication and Authorization
+
+
+Room for improvement:
+- Authentication
+- Authorization
+- Ratings
+- 
+
+To do:
+- Authorize and Authenticate users
+- Add ratings to books
+
+
+## Acknowledgements
+Give credit here.
+- This project was inspired by...
+- This project was based on [this tutorial](https://www.example.com).
+- Many thanks to...
+
+
+## Contact
+Created by [@kibetamos](https://dev.to/kibetamos) - feel free to contact me!
+
+
+<!-- Optional -->
+<!-- ## License -->
+<!-- This project is open source and available under the [... License](). -->
+
+<!-- You don't have to include all sections - just the one's relevant to your project -->
