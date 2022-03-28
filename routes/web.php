@@ -18,6 +18,8 @@ use Illuminate\Http\Requests;
 //$verbs = ['GET', 'HEAD', 'POST', 'PUT', 'PATCH', 'DELETE'];
 // $router->get('/books', 'BookController@getAPI');
 
+$router->get('/', 'BookController@index');
+
 $router->get('/books', 'BookController@index');
 
 $router->get('/books/{id}', 'BookController@show');
