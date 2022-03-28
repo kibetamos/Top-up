@@ -80,8 +80,11 @@ $router->put('/books/update/{id}', 'BookController@update');
 $router->delete('/books/delete/{id}', 'BookController@destroy');
 
 We use the POST method to add a book https://topuprestmama.herokuapp.com/books/create
+
 We use the GET method to get the records of books we have https://topuprestmama.herokuapp.com/books
+
 We use the PUT methos to update an entry https://topuprestmama.herokuapp.com/books/update/2
+
 We use the DELETE method to delete an entry https://topuprestmama.herokuapp.com/books/delete/2
 
 
