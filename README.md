@@ -9,16 +9,16 @@ Laravel Lumen is a stunningly fast PHP micro-framework for building web applicat
 
 ## Official Documentation
 ## Requirements
-*[1.Insomnia to rn the API]
-*[2.PHP >= 7.1.3]
-*[3.OpenSSL PHP Extension]
-*[4.PDO PHP Extension]
-*[5.Tokenizer PHP Extension]
-[*6.XML PHP Extension]
-*[7.Ctype PHP Extension]
-*[8.JSON PHP Extension]
-[*9.GD PHP Extension]
-[*10.Imagick PHP Extension]
+*[1.Insomnia to rn the API](#general-info)
+*[2.PHP >= 7.1.3](#general-info)
+*[3.OpenSSL PHP Extension](#general-info)
+*[4.PDO PHP Extension](#general-info)
+*[5.Tokenizer PHP Extension](#general-info)
+[*6.XML PHP Extension](#general-info)
+*[7.Ctype PHP Extension](#general-info)
+*[8.JSON PHP Extension](#general-info)
+[*9.GD PHP Extension](#general-info)
+[*10.Imagick PHP Extension](#general-info)
 [*Note: Improper permission on storage & public folder will lead to server & application errors]
 
 
