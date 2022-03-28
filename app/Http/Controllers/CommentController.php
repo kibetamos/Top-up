@@ -12,7 +12,8 @@ class CommentController extends Controller
              // Get all data from databases
              $comments = Comment::all();
 
-             return response() ->json($comments);
+            //  return response() ->json($comments);
+            return view('comments', ['comments'=>$comments]);
     }
 
 
