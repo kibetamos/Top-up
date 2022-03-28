@@ -44,11 +44,11 @@ Laravel Lumen is a stunningly fast PHP micro-framework for building web applicat
 List the ready features here:
 - CRUD Functionality of  a book and a comment
 - Get All books and comments
-- API craetion
+- API creation
 
 
 ## Screenshots
-![Example screenshot](images/Screenshot(669).png)
+![Example screenshot](images/Screenshot%20(669).png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
