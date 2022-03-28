@@ -44,11 +44,18 @@ Laravel Lumen is a stunningly fast PHP micro-framework for building web applicat
 List the ready features here:
 - CRUD Functionality of  a book and a comment
 - Get All books and comments
-- API craetion
+- API creation
 
 
 ## Screenshots
-![Example screenshot](C:/Users/AK/Pictures/Screenshots/screenshot(668).png)
+![Example screenshot](images/Screenshot%20(669).png)
+Screenshot 1
+![Example screenshot](images/Screenshot%20(668).png)
+Screenshot 2
+![Example screenshot](images/Screenshot%20(669).png)
+Screenshot 3
+![Example screenshot](images/Screenshot%20(670).png)
+Screenshot 5
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
@@ -56,6 +63,19 @@ List the ready features here:
 For our project, we already have the set up on heroku with the database migrated to the cloud.
 To set up, you wil use insomnia so as to push the book records to the database. 
 To create a book from the insomnia software;
+
+$router->get('/', 'BookController@index');
+
+$router->get('/books', 'BookController@index');
+
+$router->get('/books/{id}', 'BookController@show');
+
+$router->post('/books/create', 'BookController@store');
+
+$router->put('/books/update/{id}', 'BookController@update');
+
+$router->delete('/books/delete/{id}', 'BookController@destroy');
+
 We use the POST method to add a book https://topuprestmama.herokuapp.com/books/create
 We use the GET method to get the records of books we have https://topuprestmama.herokuapp.com/books
 We use the PUT methos to update an entry https://topuprestmama.herokuapp.com/books/update/2
@@ -95,10 +115,10 @@ To do:
 
 
 ## Acknowledgements
-Give credit here.
+<!-- Give credit here.
 - This project was inspired by...
 - This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- Many thanks to... -->
 
 
 ## Contact
