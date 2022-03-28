@@ -25,8 +25,8 @@ class BookController extends Controller
          //return BookResource::collection(Book::with('comments')->paginate(25));
         $books = Book::all();
 
-        return response() ->json($books);
-
+       // return response() ->json($books);
+        return view('books', ['books'=>$books]);
     }
 
     public function create()

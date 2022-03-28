@@ -42,6 +42,6 @@ $router->put('/comments/update/{id}', 'CommentController@update');
 $router->delete('/comments/delete/{id}', 'CommentController@destroy');
 
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+// $router->get('/', function () use ($router) {
+//     return $router->app->version();
+// });
